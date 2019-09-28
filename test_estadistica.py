@@ -10,4 +10,7 @@ class EstadisticaTest(TestCase):
         self.assertEqual(Estadistica.calcularEstadistica("2"), 1, "Un numero")
         self.assertEqual(Estadistica.calcularEstadistica("10"), 1, "Un numero")
 
+    def test_calcularElementosCadenaConDosNumero(self):
+        self.assertEqual(Estadistica.calcularEstadistica("1,2"), 2, "Un numero")
+
 
