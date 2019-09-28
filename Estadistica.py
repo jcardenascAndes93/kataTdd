@@ -9,4 +9,4 @@ class Estadistica:
             numeros = cadena.split(",")
             return [len(numeros)]
         else:
-            return [1]
+            return [1, int(cadena)]
