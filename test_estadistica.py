@@ -11,3 +11,7 @@ class EstadisticaTest(TestCase):
     def test_calcularElementosYMinimoUnNumero(self):
         self.assertEqual(Estadistica.calcularEstadistica("3"),
                          [1, 3], "Un numero")
+    
+    def test_calcularElementosYMinimoDosNumeros(self):
+        self.assertEqual(Estadistica.calcularEstadistica("3, 1"),
+                         [2, 1], "Un numero")
