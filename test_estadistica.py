@@ -10,4 +10,8 @@ class EstadisticaTest(TestCase):
 
     def test_calcularElemMinMaxPromUnNumero(self):
         self.assertEqual(Estadistica.calcularEstadistica("8"),
-                         [1, 8, 8, 8], "Cadena vacia")
+                         [1, 8, 8, 8], "Un numero")
+
+    def test_calcularElemMinMaxPromDosNumeros(self):
+        self.assertEqual(Estadistica.calcularEstadistica("8, 2"),
+                         [2, 2, 8, 5], "Dos numeros")
