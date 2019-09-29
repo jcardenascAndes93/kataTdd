@@ -15,3 +15,7 @@ class EstadisticaTest(TestCase):
     def test_calcularElemMinMaxCadenaConDosNumero(self):
         self.assertEqual(Estadistica.calcularEstadistica("3,2"),
                          [2, 2, 3], "Dos numeros")
+
+    def test_calcularElemMinMaxCadenaConNNumero(self):
+        self.assertEqual(Estadistica.calcularEstadistica("3,2,4,8,10"),
+                         [5, 2, 10], "N numeros")
